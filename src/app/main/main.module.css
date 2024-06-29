@@ -1,0 +1,12 @@
+.wrapper {
+    animation: mainAnim 5s ease 0s 1 normal forwards;
+}
+@keyframes mainAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

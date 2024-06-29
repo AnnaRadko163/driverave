@@ -1,0 +1,49 @@
+.poster{
+  background-color:black;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.poster__wrapper {
+  height: 100vh;
+  position: relative; 
+}
+
+.poster__phone {
+  max-width: 100vh;
+  animation: animPhone 5s ease 0s 1 normal forwards;
+  z-index: 1;
+}
+
+@keyframes animPhone {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.poster__titleWrapper { 
+  width: 70vw;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+
+.poster__title {
+  max-height: 20vh;
+  animation:  animTitle 2s linear 3s 1 normal both;
+  z-index: 2;
+}
+
+@keyframes animTitle {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}

@@ -1,0 +1,159 @@
+.login {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    height: 93vh;
+    padding: 30px 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .4s ease;
+    width: 560px;
+    z-index: 999;
+    right: -100%;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.login_active {
+    right: 0
+}
+
+.login__bg {
+    display: none;
+    background-color: #6a1b005d;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .3s ease-in;
+    width: 100%;
+    z-index: 888;
+}
+
+.login__bg_active {
+    display: flex !important
+}
+
+.login__close-wrapper {
+    align-items: center;
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: space-between;
+}
+
+.login__close {
+    cursor: pointer;
+    margin: auto 0 auto auto;
+}
+
+.login h2 {
+    text-align: center;
+    margin: 210px auto 15px 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 85px;
+}
+
+.login form{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.input-text {
+    width: 93%;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    padding: 15px 20px;
+}
+
+.login__checkbox-wrapper {
+    display:flex;
+    margin-top: 30px;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5.5px;
+}
+
+.checkbox label {
+    font-size: 16px;
+    line-height: 19px;
+    color: #656565;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.login__checkbox-wrapper a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #014E87;
+    text-decoration: none;
+}
+
+.login__button{
+    margin-top: 30px;
+    background: #E83801;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    height: 44px;
+    cursor: pointer;
+}
+
+.login__button:hover {
+    background: #000;
+
+}
+
+.login__registration {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 13px; 
+}
+.login__registration p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #656565;
+}
+.login__registration a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #2D6CB4;
+    text-decoration: none;
+}
+
+
+@media (max-width: 660px){
+    .login {
+        width: 90vw;
+    }
+    .login h2 {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 550px){
+    .login {
+        width: 85vw;
+    }
+}
