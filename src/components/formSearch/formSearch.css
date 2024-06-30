@@ -144,6 +144,10 @@
         width: 100%;
     }
 
+    .date-min input {
+        width: 50%;
+    }
+
     .form-search__box.ntl { 
         width: 100%; 
     }
