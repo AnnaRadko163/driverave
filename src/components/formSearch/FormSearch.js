@@ -20,14 +20,24 @@ export default function FormSearch() {
                     <input placeholder="Куда едем" type="text" />
                 </div>
                 <div className='form-search__line'></div>
-                <div onClick={() => setOpenCalendar(true)} className="form-search__box">
+                <div onClick={() => setOpenCalendar(true)} className="form-search__box date-max">
                     <label >Заезд</label>
                     <input placeholder="Когда" type="text" value={arrival}/>
                 </div>
                 <div className='form-search__line'></div>
-                <div onClick={() => setOpenCalendar(true)} className="form-search__box">
+                <div onClick={() => setOpenCalendar(true)} className="form-search__box date-max">
                     <label >Отъезд</label>
                     <input placeholder="Когда" type="text" value={leave}/>
+                </div>
+                <div className='form-search__data date-min'>
+                    <div onClick={() => setOpenCalendar(true)} className="form-search__box" >
+                        <label >Заезд</label>
+                        <input placeholder="Когда" type="text" value={arrival} style={{ borderRadius: '25px 0px 0px 25px'}}/>
+                    </div>
+                    <div onClick={() => setOpenCalendar(true)} className="form-search__box" >
+                        <label >Отъезд</label>  
+                        <input placeholder="Когда" type="text" value={leave} style={{ borderRadius: '0px 25px 25px 0px'}}/>
+                    </div>
                 </div>
                 <div className='form-search__line'></div>
                 <div className="form-search__box ntl" >
