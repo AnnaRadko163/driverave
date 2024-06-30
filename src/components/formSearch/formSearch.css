@@ -39,6 +39,10 @@
     font-size: 12px;
 }
 
+.date-min {
+    display: none;
+}
+
 .form-search__box input::-moz-placeholder {
     color: #000;
     font-size: 16px;
@@ -128,6 +132,15 @@
     }
 
     .form-search__box {
+        width: 100%;
+    }
+
+    .date-max {
+        display: none;
+    }
+
+    .date-min {
+        display: flex;
         width: 100%;
     }
 
